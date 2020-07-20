@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitcoin</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+
+</head>
+<body class="body">
+    {% block body %}
+    <h1 class="header1">Welcome to Bitcoin Price Home Page!</h1>
+    <form method="POST" action="/price">
+        <button type="submit" name='show price' class="button" style="vertical-align:middle"><span>Show Price</span></button>
+    </form>
+    {% endblock %}
+</body>
+</html>

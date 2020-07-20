@@ -1,0 +1,31 @@
+{% extends 'home.html' %}
+{% block body %}
+<h1 class="Page-heading">Bitcoin Price</h1>
+<div class="Table js-ColumnTable" data-columns="4">
+    <div class="Table-item Table-heading">BPI Code</div>
+    <div class="Table-item Table-heading">BPI Rate</div>
+    <div class="Table-item Table-heading">BPI Symbol</div>
+    <div class="Table-item Table-heading">BPI description</div>
+
+    <div class="Table-item">{{bpi_USD_code}}</div>
+    <div class="Table-item">{{bpi_USD_rate}}</div>
+    <div class="Table-item">{{bpi_USD_symbol}}</div>
+    <div class="Table-item">{{bpi_USD_description}}</div>
+
+    <div class="Table-item">{{bpi_GBP_code}}</div>
+    <div class="Table-item">{{bpi_GBP_rate}}</div>
+    <div class="Table-item">{{bpi_GBP_symbole}}</div>
+    <div class="Table-item">{{bpi_GBP_description}}</div>
+
+    <div class="Table-item">{{bpi_EUR_code}}</div>
+    <div class="Table-item">{{bpi_EUR_rate}}</div>
+    <div class="Table-item">{{bpi_EUR_symbole}}</div>
+    <div class="Table-item">{{bpi_EUR_description}}</div>
+</div>
+<h5>Time updated: {{time_updated}}
+    <br>Time updated (ISO): {{time_updatedISO}}
+    <br>Time updeted (UK): {{time_updateduk}}
+</h5>
+<div class="last">{{disclaimer}}</div>
+<div class="last">{{chartName}}</div>
+{% endblock %}
