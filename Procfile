@@ -1,1 +1,1 @@
-web:node src/index.py
+web: gunicorn wsgi:app
