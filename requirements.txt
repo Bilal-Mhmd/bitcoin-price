@@ -22,7 +22,7 @@ pylint==2.5.3
 requests==2.24.0
 six==1.15.0
 toml==0.10.1
-urllib3==1.25.9
+urllib3==1.26.5
 virtualenv==20.0.27
 virtualenv-clone==0.5.4
 Werkzeug==1.0.1
